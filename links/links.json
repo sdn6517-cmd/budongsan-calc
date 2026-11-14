@@ -1,0 +1,64 @@
+{
+  "_readme": "쿠팡 파트너스 단축링크 설정 파일. partners.coupang.com 로그인 → 링크 생성 → 상품 검색 → [링크 생성] → 단축 URL(https://link.coupang.com/...) 복사 → 아래 값에 붙여넣기. 빈 값이면 해당 버튼이 '링크 준비 중'으로 남습니다.",
+  "updated": "2026-11-15",
+  "links": {
+    "babybrezza_formula": "",
+    "babybrezza_sterilizer": "",
+    "happytales_bodypillow": "",
+    "baby_wipes": "",
+    "diaper_band": "",
+    "baby_laundry": "",
+    "dove_handwash": "",
+    "pigeon_drain": ""
+  },
+  "items": [
+    {
+      "key": "babybrezza_formula",
+      "name": "베이비 브레짜 분유제조기 맘마존",
+      "search": "베이비브레짜 분유제조기 맘마존",
+      "category": "출산·수유 필수템"
+    },
+    {
+      "key": "babybrezza_sterilizer",
+      "name": "베이비 브레짜 올인원 젖병세척기 프로",
+      "search": "베이비브레짜 젖병세척기 프로",
+      "category": "출산·수유 필수템"
+    },
+    {
+      "key": "happytales_bodypillow",
+      "name": "해피테일즈 H자형 바디필로우 60수 순면",
+      "search": "해피테일즈 바디필로우 H자형 60수",
+      "category": "임산부 꿀잠템"
+    },
+    {
+      "key": "baby_wipes",
+      "name": "신생아 물티슈 엠보싱 무향",
+      "search": "신생아 물티슈 무향 엠보싱 리필",
+      "category": "신생아 살림템"
+    },
+    {
+      "key": "diaper_band",
+      "name": "신생아 기저귀 밴드형",
+      "search": "신생아 기저귀 밴드형",
+      "category": "신생아 살림템"
+    },
+    {
+      "key": "baby_laundry",
+      "name": "유아 세탁세제 무형광",
+      "search": "유아 세탁세제 무형광",
+      "category": "신생아 살림템"
+    },
+    {
+      "key": "dove_handwash",
+      "name": "도브 핸드워시",
+      "search": "도브 핸드워시 리필",
+      "category": "아빠 살림템"
+    },
+    {
+      "key": "pigeon_drain",
+      "name": "피죤 드릴펑",
+      "search": "피죤 드릴펑",
+      "category": "아빠 살림템"
+    }
+  ]
+}
