@@ -2,14 +2,14 @@
   "_readme": "쿠팡 파트너스 단축링크 설정 파일. partners.coupang.com 로그인 → 링크 생성 → 상품 검색 → [링크 생성] → 단축 URL(https://link.coupang.com/...) 복사 → 아래 값에 붙여넣기. 빈 값이면 해당 버튼이 '링크 준비 중'으로 남습니다.",
   "updated": "2026-11-15",
   "links": {
-    "babybrezza_formula": "",
-    "babybrezza_sterilizer": "",
-    "happytales_bodypillow": "",
-    "baby_wipes": "",
-    "diaper_band": "",
-    "baby_laundry": "",
-    "dove_handwash": "",
-    "pigeon_drain": ""
+    "babybrezza_formula": "https://link.coupang.com/a/iGyq9ZPMYe",
+    "babybrezza_sterilizer": "https://link.coupang.com/a/iGyt4Pq2MK",
+    "happytales_bodypillow": "https://link.coupang.com/a/iGyw0KziIS",
+    "baby_wipes": "https://link.coupang.com/a/iGyzLHo6W4",
+    "diaper_band": "https://link.coupang.com/a/iGyDVHdWTc",
+    "baby_laundry": "https://link.coupang.com/a/iGyHIXQM4y",
+    "dove_handwash": "https://link.coupang.com/a/iGyKFGHnps",
+    "pigeon_drain": "https://link.coupang.com/a/iGyNUCM9Nk"
   },
   "items": [
     {
