@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>부동산 계산기 3종 | 청약가점·주담대 DSR·취득세 (2026 기준)</title>
+<meta name="description" content="2026년 기준 청약가점(84점), 주담대 DSR·대출한도, 주택 취득세를 한 화면에서 바로 계산합니다. 무주택기간·부양가족·청약통장 배점표, 스트레스 DSR 3.0%p, 6억·9억 누진 취득세율과 생애최초 감면까지 근거 법령과 함께 정리했습니다." />
+<meta name="keywords" content="청약가점 계산기, DSR 계산기, 취득세 계산기, 주담대 한도, 청약 84점, 생애최초 취득세 감면, 스트레스 DSR, 2026 부동산" />
+<meta name="author" content="부동산 계산소" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<link rel="canonical" href="https://sdn6517-cmd.github.io/budongsan-calc/" />
+<meta name="theme-color" content="#0f5f5c" />
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="부동산 계산소" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:title" content="부동산 계산기 3종 | 청약가점·주담대 DSR·취득세 (2026 기준)" />
+<meta property="og:description" content="청약가점 84점, 스트레스 DSR 대출한도, 6억·9억 누진 취득세율을 2026년 기준으로 즉시 계산합니다." />
+<meta property="og:url" content="https://sdn6517-cmd.github.io/budongsan-calc/" />
+<meta property="og:image" content="https://sdn6517-cmd.github.io/budongsan-calc/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="부동산 계산기 3종 | 청약가점·주담대 DSR·취득세" />
+<meta name="twitter:description" content="2026년 기준 청약가점·DSR·취득세를 바로 계산. 근거 법령과 체크리스트 포함." />
+<meta name="twitter:image" content="https://sdn6517-cmd.github.io/budongsan-calc/og-image.png" />
+
+<!-- Pretendard (CDN) -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<link rel="stylesheet" as="style" crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f5f5c'/%3E%3Cpath d='M8 16.5 16 9l8 7.5V24a1 1 0 0 1-1 1h-4v-6h-6v6H9a1 1 0 0 1-1-1z' fill='%23fff'/%3E%3C/svg%3E" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://sdn6517-cmd.github.io/budongsan-calc/#app",
+      "name": "부동산 계산소 — 청약가점·주담대 DSR·취득세 계산기",
+      "url": "https://sdn6517-cmd.github.io/budongsan-calc/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any (웹 브라우저)",
+      "inLanguage": "ko-KR",
+      "isAccessibleForFree": true,
+      "description": "2026년 기준 청약가점(84점), 주택담보대출 DSR·최대 대출한도, 주택 취득세를 입력 즉시 계산하는 무료 웹 계산기입니다.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+      "featureList": [
+        "청약가점 84점 계산(무주택기간·부양가족·청약통장, 배우자 통장 합산)",
+        "주담대 DSR과 최대 대출한도 계산(스트레스 금리, 상환방식, 기존 대출 반영)",
+        "주택 취득세 계산(취득세·지방교육세·농어촌특별세, 생애최초 감면)"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sdn6517-cmd.github.io/budongsan-calc/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "청약가점은 몇 점이 만점인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "84점 만점입니다. 무주택기간 32점, 부양가족 수 35점, 청약통장 가입기간 17점을 더한 값이며, 배점은 「주택공급에 관한 규칙」 별표 1에 정해져 있습니다. 항목별 상한이 있어 세 항목 모두 만점이어야 84점이 됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "무주택기간은 언제부터 세나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "원칙적으로 신청자가 만 30세가 되는 날부터입니다. 만 30세 이전에 혼인신고를 했다면 혼인신고일부터 기산합니다. 중간에 본인이나 배우자가 주택을 소유한 적이 있으면 그 주택을 처분해 무주택자가 된 날부터 다시 셉니다. 만 30세 미만이면서 미혼인 무주택자는 이 항목이 0점입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "배우자 청약통장 가입기간도 점수에 들어가나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "들어갑니다. 배우자 청약통장 가입기간의 50%에 해당하는 기간으로 산정한 점수를 최대 3점까지 본인 점수에 더할 수 있고, 합산한 통장 점수는 17점을 넘지 않습니다. 특별공급에는 이 합산이 적용되지 않습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "DSR 40%면 연소득의 40%까지 빌릴 수 있다는 뜻인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아닙니다. DSR은 모든 대출의 1년 원리금 상환액이 연소득에서 차지하는 비율입니다. 은행권 DSR 한도 40%는 연소득의 40%까지 원리금으로 갚을 수 있다는 뜻이지, 대출금액이 연소득의 40%라는 뜻이 아닙니다. 실제 한도는 LTV, 시가별 금액한도, DSR 중 가장 작은 값으로 정해집니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "스트레스 DSR은 실제로 금리를 더 내는 건가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아닙니다. 스트레스 금리는 대출한도를 계산할 때만 쓰는 가상의 가산금리입니다. 2026년 하반기 기준 수도권·규제지역 주택담보대출은 3.0%p, 지방 비규제지역은 0.75%p를 더한 금리로 DSR을 산정합니다. 실제로 내는 이자는 계약금리 그대로입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "취득세율은 1%인가요, 3%인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1주택(또는 조정대상지역 외 2주택) 기준으로 취득가액 6억 원 이하 1%, 6억 원 초과 9억 원 이하 누진 1~3%, 9억 원 초과 3%입니다. 여기에 지방교육세(취득세액의 10%)와 전용 85㎡ 초과 주택의 농어촌특별세(0.2%)가 더해집니다. 조정대상지역 2주택은 8%, 3주택 이상은 12% 중과입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "생애최초 취득세 감면은 얼마까지 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "본인과 배우자가 주택을 소유한 적이 없고 12억 원 이하 주택을 유상 취득하면 취득세를 최대 200만 원까지 감면받습니다. 전용 60㎡ 이하이면서 취득가액 3억 원(수도권 6억 원) 이하인 공동주택·도시형 생활주택·다가구주택이나 인구감소지역 주택은 최대 300만 원입니다. 감면 기한은 2028년 12월 31일까지입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "지방교육세와 농어촌특별세도 감면되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "생애최초 감면은 취득세에만 적용됩니다. 지방교육세와 농어촌특별세는 감면 대상이 아니어서 감면 전 취득세액을 기준으로 계산됩니다. 취득세를 모두 감면받아도 지방교육세는 내야 하는 경우가 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "취득세는 언제까지 내야 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "유상거래로 주택을 취득하면 취득일부터 60일 이내에 신고하고 납부해야 합니다. 기한을 넘기면 무신고 가산세(세액의 20%)와 납부지연 가산세가 붙습니다. 납부할 세액이 250만 원을 넘으면 2개월 이내 분납을 신청할 수 있는 경우가 있으니 관할 지자체에 확인하세요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "일시적으로 2주택이 되면 중과세율이 적용되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "이사·상속 등으로 일시적 2주택이 된 경우, 일정 요건을 갖추고 3년 이내에 종전 주택을 처분하면 1주택으로 보아 1~3% 일반세율이 적용됩니다. 요건과 기산일은 취득 시점과 주택 수에 따라 달라지므로 계약 전 관할 지자체에 확인하는 것이 안전합니다."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- =========================================================================
+     광고 스크립트 삽입 위치 (Google AdSense)
+     AdSense 승인 후 아래 주석을 풀고 ca-pub-XXXXXXXXXXXXXXXX, data-ad-slot 값을
+     실제 값으로 바꿔 넣으세요. 스크립트는 </head> 직전에 한 번만 넣으면 됩니다.
+
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
+     Taboola / MGID 는 </body> 직전에 한 번 삽입하고, 광고 지면은 아래
+     .ad-slot (ad-slot-top / ad-slot-infeed / ad-slot-bottom) 안에 넣습니다.
+     ========================================================================= -->
+</head>
+<body>
+<a class="skip-link" href="#calculators">계산기로 바로 가기</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">집</span>
+      <span>부동산 계산소
+        <small>청약가점 · DSR · 취득세</small>
+      </span>
+    </a>
+    <nav class="header-nav" aria-label="주요 메뉴">
+      <a href="#cheongyak" data-tab="cheongyak">청약가점</a>
+      <a href="#dsr" data-tab="dsr">DSR</a>
+      <a href="#acq" data-tab="acq">취득세</a>
+      <a href="#guide">해설</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= 히어로 ================= -->
+  <section class="hero">
+    <div class="wrap">
+      <h1>청약가점·주담대 DSR·취득세,<br />한 화면에서 바로 계산하세요</h1>
+      <p class="lead">2026년 11월 기준 법령과 금융당국 발표를 반영했습니다. 값을 바꾸면 결과가 즉시 다시 계산되고, 계산 근거와 배점표도 함께 보여 드립니다.</p>
+      <div class="hero-meta">
+        <span>📅 기준일 2026. 11. 14.</span>
+        <span>🔒 입력값은 서버로 전송되지 않습니다</span>
+        <span>📱 모바일·PC 동일</span>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="계산기 선택">
+        <button class="tab" role="tab" id="tab-cheongyak" data-tab="cheongyak" aria-controls="panel-cheongyak" aria-selected="true">
+          <span class="tab-num">1</span>청약가점
+        </button>
+        <button class="tab" role="tab" id="tab-dsr" data-tab="dsr" aria-controls="panel-dsr" aria-selected="false" tabindex="-1">
+          <span class="tab-num">2</span>주담대 DSR
+        </button>
+        <button class="tab" role="tab" id="tab-acq" data-tab="acq" aria-controls="panel-acq" aria-selected="false" tabindex="-1">
+          <span class="tab-num">3</span>취득세
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 계산기 ================= -->
+  <div class="wrap" id="calculators">
+
+    <!-- 광고: 상단 (ad-slot-top) -->
+    <aside class="ad-slot" id="ad-slot-top" aria-label="광고">
+      <div class="ad-inner">
+        <div>
+          <b>광고 영역 · ad-slot-top</b>
+          <span>Google AdSense 반응형 또는 Taboola/MGID 위젯을 이 자리에 넣습니다.</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ---------- 1. 청약가점 ---------- -->
+    <section class="panel section section-tight" id="panel-cheongyak" data-panel="cheongyak" role="tabpanel" aria-labelledby="tab-cheongyak">
+      <div class="calc-grid">
+
+        <form class="card" id="cy-form" onsubmit="return false;">
+          <div class="card-head">
+            <span class="step">1</span>
+            <h2>청약가점 계산기</h2>
+          </div>
+          <p class="card-sub">84점 만점 · 「주택공급에 관한 규칙」 별표 1 배점 기준</p>
+
+          <div class="field">
+            <label for="cy-own-years">무주택기간</label>
+            <div class="grid-2">
+              <div class="field-row">
+                <input type="number" id="cy-own-years" min="0" max="50" step="1" value="7" inputmode="numeric" />
+                <span class="unit">년</span>
+              </div>
+              <div class="field-row">
+                <input type="number" id="cy-own-months" min="0" max="11" step="1" value="0" inputmode="numeric" />
+                <span class="unit">개월</span>
+              </div>
+            </div>
+            <span class="hint">만 30세가 된 날(그 전에 혼인했다면 혼인신고일)부터 무주택이었던 기간</span>
+            <div class="chips" aria-label="무주택기간 빠른 선택">
+              <button type="button" class="chip" data-set='{"ownYears":0,"ownMonths":0}'>1년 미만</button>
+              <button type="button" class="chip" data-set='{"ownYears":3,"ownMonths":0}'>3년</button>
+              <button type="button" class="chip" data-set='{"ownYears":7,"ownMonths":0}'>7년</button>
+              <button type="button" class="chip" data-set='{"ownYears":15,"ownMonths":0}'>15년 이상</button>
+            </div>
+          </div>
+
+          <details class="details-box">
+            <summary>기산일 자동 계산 (생년월일로 계산)</summary>
+            <div class="details-body">
+              <div class="grid-2">
+                <div>
+                  <label class="field-label" for="cy-birth">생년월일</label>
+                  <input type="date" id="cy-birth" />
+                </div>
+                <div>
+                  <label class="field-label" for="cy-marriage">혼인신고일 (선택)</label>
+                  <input type="date" id="cy-marriage" />
+                </div>
+              </div>
+              <div style="margin-top:10px">
+                <label class="field-label" for="cy-disposal">주택을 처분한 날 (선택)</label>
+                <input type="date" id="cy-disposal" />
+              </div>
+              <div class="note" id="cy-helper-result" style="margin-top:10px">
+                <span class="muted">생년월일을 넣으면 기산일과 기간을 자동으로 계산합니다.</span>
+              </div>
+            </div>
+          </details>
+
+          <label class="switch" style="margin-top:12px">
+            <input type="checkbox" id="cy-owns-home" />
+            <span>현재 주택을 소유하고 있음 (무주택 0점 처리)</span>
+          </label>
+
+          <hr class="divider" />
+
+          <div class="field">
+            <label for="cy-dependents">부양가족 수 (본인 제외)</label>
+            <div class="field-row">
+              <input type="number" id="cy-dependents" min="0" max="6" step="1" value="2" inputmode="numeric" />
+              <span class="unit">명</span>
+            </div>
+            <span class="hint">배우자, 3년 이상 함께 사는 직계존속, 미혼 직계비속. 6명 이상은 35점 만점</span>
+            <div class="chips" aria-label="부양가족 수 빠른 선택">
+              <button type="button" class="chip" data-set='{"dependents":0}'>0명</button>
+              <button type="button" class="chip" data-set='{"dependents":1}'>1명</button>
+              <button type="button" class="chip" data-set='{"dependents":2}'>2명</button>
+              <button type="button" class="chip" data-set='{"dependents":3}'>3명</button>
+              <button type="button" class="chip" data-set='{"dependents":6}'>6명 이상</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="cy-acc-years">청약통장 가입기간</label>
+            <div class="grid-2">
+              <div class="field-row">
+                <input type="number" id="cy-acc-years" min="0" max="50" step="1" value="5" inputmode="numeric" />
+                <span class="unit">년</span>
+              </div>
+              <div class="field-row">
+                <input type="number" id="cy-acc-months" min="0" max="11" step="1" value="0" inputmode="numeric" />
+                <span class="unit">개월</span>
+              </div>
+            </div>
+            <span class="hint">최초 가입일 기준. 6개월 미만 1점 ~ 15년 이상 17점</span>
+            <div class="chips" aria-label="가입기간 빠른 선택">
+              <button type="button" class="chip" data-set='{"accYears":0,"accMonths":3}'>6개월 미만</button>
+              <button type="button" class="chip" data-set='{"accYears":2,"accMonths":0}'>2년</button>
+              <button type="button" class="chip" data-set='{"accYears":5,"accMonths":0}'>5년</button>
+              <button type="button" class="chip" data-set='{"accYears":15,"accMonths":0}'>15년 이상</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="switch">
+              <input type="checkbox" id="cy-spouse-on" />
+              <span>배우자 청약통장 합산 (최대 3점)</span>
+            </label>
+            <div id="cy-spouse-fields" hidden style="margin-top:10px">
+              <div class="grid-2">
+                <div class="field-row">
+                  <input type="number" id="cy-spouse-years" min="0" max="50" step="1" value="0" inputmode="numeric" aria-label="배우자 가입기간 년" />
+                  <span class="unit">년</span>
+                </div>
+                <div class="field-row">
+                  <input type="number" id="cy-spouse-months" min="0" max="11" step="1" value="0" inputmode="numeric" aria-label="배우자 가입기간 개월" />
+                  <span class="unit">개월</span>
+                </div>
+              </div>
+              <span class="hint">배우자 가입기간의 50%로 점수를 내고, 3점까지만 더합니다. 합산 상한 17점.</span>
+            </div>
+          </div>
+        </form>
+
+        <div>
+          <div class="result-hero">
+            <div class="label">내 청약가점</div>
+            <div class="value" id="cy-total">38점</div>
+            <div class="sub" id="cy-total-sub">84점 만점</div>
+            <div class="meter" aria-hidden="true"><i id="cy-bar"></i></div>
+            <div class="hero-foot">
+              <span class="grade good" id="cy-grade">중위권</span>
+              <span id="cy-advice" style="opacity:.92"></span>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:16px">
+            <h3 style="font-size:1rem;margin-bottom:10px">항목별 점수</h3>
+            <div class="table-wrap">
+              <table class="data">
+                <caption>배점 상한: 무주택 32점 · 부양가족 35점 · 통장 17점</caption>
+                <thead>
+                  <tr><th scope="col">항목</th><th scope="col">내 조건</th><th scope="col" class="num">점수</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="row-label">무주택기간</td>
+                    <td id="cy-own-desc" class="muted">-</td>
+                    <td class="num pts" id="cy-own-pts">0점</td>
+                  </tr>
+                  <tr>
+                    <td class="row-label">부양가족 수</td>
+                    <td id="cy-dep-desc" class="muted">-</td>
+                    <td class="num pts" id="cy-dep-pts">0점</td>
+                  </tr>
+                  <tr>
+                    <td class="row-label">청약통장 가입기간</td>
+                    <td id="cy-acc-desc" class="muted">-</td>
+                    <td class="num pts" id="cy-acc-pts">0점</td>
+                  </tr>
+                  <tr class="is-total">
+                    <td>합계</td>
+                    <td class="muted">84점 만점</td>
+                    <td class="num" id="cy-total-2">0점</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="note small">
+              <strong>배점표는 법으로 정해져 있습니다.</strong> 계산이 맞아도 세는 방식이 틀리면 실제 청약에서 점수가 달라집니다.
+              부양가족 인정 요건과 통장 가입기간 함정은 아래 <a href="#cy-detail">해설</a>에서 확인하세요.
+            </div>
+            <div class="result-actions">
+              <button type="button" class="btn" data-copy="cy">결과 복사</button>
+              <a class="btn" href="#cy-detail">배점 기준 보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 2. DSR ---------- -->
+    <section class="panel section section-tight" id="panel-dsr" data-panel="dsr" role="tabpanel" aria-labelledby="tab-dsr" hidden>
+      <div class="calc-grid">
+
+        <form class="card" id="dsr-form" onsubmit="return false;">
+          <div class="card-head">
+            <span class="step">2</span>
+            <h2>주담대 DSR · 대출한도</h2>
+          </div>
+          <p class="card-sub">스트레스 DSR 반영 · 은행권 한도 40% 기준</p>
+
+          <div class="field">
+            <label for="dsr-income">연소득 (세전)</label>
+            <div class="field-row">
+              <input type="number" id="dsr-income" min="0" step="100" value="6000" inputmode="numeric" />
+              <span class="unit">만원</span>
+            </div>
+            <span class="hint">부부 합산 소득도 가능합니다. 예: 6,000 = 6,000만 원</span>
+            <div class="chips" aria-label="연소득 빠른 선택">
+              <button type="button" class="chip" data-set='{"income":3000}'>3,000만</button>
+              <button type="button" class="chip" data-set='{"income":5000}'>5,000만</button>
+              <button type="button" class="chip" data-set='{"income":6000}'>6,000만</button>
+              <button type="button" class="chip" data-set='{"income":8000}'>8,000만</button>
+              <button type="button" class="chip" data-set='{"income":10000}'>1억</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="dsr-rate">대출금리 (연)</label>
+            <div class="field-row">
+              <input type="number" id="dsr-rate" min="0" max="20" step="0.01" value="4.5" inputmode="decimal" />
+              <span class="unit">%</span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="dsr-years">대출기간</label>
+            <div class="field-row">
+              <input type="number" id="dsr-years" min="1" max="50" step="1" value="30" inputmode="numeric" />
+              <span class="unit">년</span>
+            </div>
+            <div class="chips" aria-label="대출기간 빠른 선택">
+              <button type="button" class="chip" data-set='{"years":10}'>10년</button>
+              <button type="button" class="chip" data-set='{"years":20}'>20년</button>
+              <button type="button" class="chip" data-set='{"years":30}'>30년</button>
+              <button type="button" class="chip" data-set='{"years":40}'>40년</button>
+            </div>
+          </div>
+
+          <fieldset class="fieldset">
+            <legend>상환방식</legend>
+            <div class="segmented stack-2">
+              <label><input type="radio" name="dsr-method" value="annuity" checked /><span>원리금균등</span></label>
+              <label><input type="radio" name="dsr-method" value="equalPrincipal" /><span>원금균등</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="dsr-stress">스트레스 금리 가산</label>
+            <select id="dsr-stress">
+              <option value="3">3.0%p — 수도권·규제지역 변동형·5년 미만 고정 (100%)</option>
+              <option value="2.4">2.4%p — 혼합형 5~9년 고정 (80%)</option>
+              <option value="1.8">1.8%p — 혼합형 9~15년 고정 (60%)</option>
+              <option value="1.2">1.2%p — 혼합형 15~21년·주기형 5년 (40%)</option>
+              <option value="0.6">0.6%p — 혼합형·주기형 21년 이상 (20%)</option>
+              <option value="0.75">0.75%p — 지방 비규제지역 주담대 (2026.12.31까지)</option>
+              <option value="0">0%p — 전액 고정금리·미적용</option>
+            </select>
+            <span class="hint">실제로 내는 금리가 아니라 <strong>한도 계산에만</strong> 쓰이는 가상 금리입니다.</span>
+            <div class="chips" aria-label="스트레스 금리 빠른 선택">
+              <button type="button" class="chip" data-set='{"stress":3}'>수도권 3.0%p</button>
+              <button type="button" class="chip" data-set='{"stress":0.75}'>지방 0.75%p</button>
+              <button type="button" class="chip" data-set='{"stress":0}'>고정금리 0%p</button>
+            </div>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="field">
+            <label for="dsr-existing">기존 대출 연간 원리금</label>
+            <div class="field-row">
+              <input type="number" id="dsr-existing" min="0" step="10" value="0" inputmode="numeric" />
+              <span class="unit">만원</span>
+            </div>
+            <span class="hint">신용대출·자동차할부 등 모든 대출의 1년 원리금 합계. 신용대출은 5년 만기로 환산합니다.</span>
+          </div>
+
+          <div class="field">
+            <label for="dsr-desired">희망 대출금</label>
+            <div class="field-row">
+              <input type="number" id="dsr-desired" min="0" step="100" value="30000" inputmode="numeric" />
+              <span class="unit">만원</span>
+            </div>
+            <span class="hint">이 금액을 빌렸을 때의 DSR과 월 상환액을 보여 드립니다.</span>
+          </div>
+
+          <div class="field">
+            <label for="dsr-limit">DSR 규제비율</label>
+            <select id="dsr-limit">
+              <option value="40" selected>40% — 은행권</option>
+              <option value="50">50% — 상호금융·2금융권</option>
+              <option value="60">60% — 정책 모기지 등 완화 적용</option>
+            </select>
+          </div>
+
+          <details class="details-box">
+            <summary>규제 한도까지 반영하기 (선택)</summary>
+            <div class="details-body">
+              <div class="field">
+                <label for="dsr-house-price">주택가격(시가)</label>
+                <div class="field-row">
+                  <input type="number" id="dsr-house-price" min="0" step="1000" value="0" inputmode="numeric" />
+                  <span class="unit">만원</span>
+                </div>
+                <span class="hint">예: 9억 = 90,000. 비워 두면 DSR 한도만 계산합니다.</span>
+              </div>
+              <fieldset class="fieldset" style="margin-bottom:0">
+                <legend>지역</legend>
+                <div class="segmented stack-2">
+                  <label><input type="radio" name="dsr-area" value="metro" checked /><span>수도권·규제지역</span></label>
+                  <label><input type="radio" name="dsr-area" value="local" /><span>지방 비규제</span></label>
+                </div>
+                <span class="hint">수도권·규제지역은 LTV 40%, 시가 15억 이하 6억 · 25억 이하 4억 · 초과 2억 한도가 함께 적용됩니다.</span>
+              </fieldset>
+            </div>
+          </details>
+        </form>
+
+        <div>
+          <div class="result-hero">
+            <div class="label">예상 DSR</div>
+            <div class="value" id="dsr-dsr-value">0.0%</div>
+            <div class="sub">
+              <span id="dsr-limit-label">DSR 한도 40%</span> · DSR 산정금리
+              <strong id="dsr-checked-rate">7.50%</strong>
+              <span class="badge badge-ok" id="dsr-badge" style="margin-left:6px">한도 이내</span>
+            </div>
+            <div class="meter" aria-hidden="true"><i id="dsr-bar"></i></div>
+            <div class="hero-foot">
+              <span id="dsr-summary">값을 입력하면 즉시 계산됩니다.</span>
+            </div>
+          </div>
+
+          <div class="kpi-grid">
+            <div class="kpi highlight">
+              <div class="k-label">DSR 기준 최대 대출한도</div>
+              <div class="k-value" id="dsr-max">-</div>
+              <div class="k-sub" id="dsr-max-won">-</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">규제 한도 반영 최종 한도</div>
+              <div class="k-value" id="dsr-final">-</div>
+              <div class="k-sub" id="dsr-final-won">-</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">월 상환액 (실제 금리)</div>
+              <div class="k-value" id="dsr-monthly">-</div>
+              <div class="k-sub" id="dsr-monthly-label">-</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">월 상환액 (스트레스 금리)</div>
+              <div class="k-value" id="dsr-monthly-stressed">-</div>
+              <div class="k-sub">한도 심사에 쓰는 금리</div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:16px">
+            <h3 style="font-size:1rem;margin-bottom:10px">상환 상세</h3>
+            <div class="table-wrap">
+              <table class="data">
+                <tbody>
+                  <tr><td class="row-label">연간 원리금 상환액 (스트레스 기준)</td><td class="num" id="dsr-annual">-</td></tr>
+                  <tr><td class="row-label">연간 원리금 여력</td><td class="num" id="dsr-room">-</td></tr>
+                  <tr><td class="row-label">총 이자 (실제 금리 기준)</td><td class="num" id="dsr-total-interest">-</td></tr>
+                  <tr><td class="row-label">총 상환액 (원금 + 이자)</td><td class="num" id="dsr-total-payment">-</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <h4 style="font-size:.9375rem;margin:16px 0 6px">한도를 정하는 세 가지 자</h4>
+            <div id="dsr-caps"><p class="muted small">주택가격을 넣으면 LTV·시가별 금액한도까지 반영해 최종 한도를 계산합니다.</p></div>
+            <div class="result-actions">
+              <button type="button" class="btn" data-copy="dsr">결과 복사</button>
+              <a class="btn" href="#dsr-detail">한도 계산법 보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 3. 취득세 ---------- -->
+    <section class="panel section section-tight" id="panel-acq" data-panel="acq" role="tabpanel" aria-labelledby="tab-acq" hidden>
+      <div class="calc-grid">
+
+        <form class="card" id="ac-form" onsubmit="return false;">
+          <div class="card-head">
+            <span class="step">3</span>
+            <h2>주택 취득세 계산기</h2>
+          </div>
+          <p class="card-sub">취득세 + 지방교육세 + 농어촌특별세 · 2026년 지방세법 기준</p>
+
+          <div class="field">
+            <label for="ac-price">취득가액 (과세표준)</label>
+            <div class="field-row">
+              <input type="number" id="ac-price" min="0" step="1000" value="60000" inputmode="numeric" />
+              <span class="unit">만원</span>
+            </div>
+            <span class="hint">실거래가와 주택공시가격 중 높은 금액. 예: 6억 = 60,000</span>
+            <div class="chips" aria-label="취득가액 빠른 선택">
+              <button type="button" class="chip" data-set='{"price":30000}'>3억</button>
+              <button type="button" class="chip" data-set='{"price":60000}'>6억</button>
+              <button type="button" class="chip" data-set='{"price":75000}'>7억 5천</button>
+              <button type="button" class="chip" data-set='{"price":90000}'>9억</button>
+              <button type="button" class="chip" data-set='{"price":120000}'>12억</button>
+            </div>
+          </div>
+
+          <fieldset class="fieldset">
+            <legend>취득 후 주택 수 (1세대 기준)</legend>
+            <div class="segmented">
+              <label><input type="radio" name="ac-houses" value="1" checked /><span>1주택</span></label>
+              <label><input type="radio" name="ac-houses" value="2" /><span>2주택</span></label>
+              <label><input type="radio" name="ac-houses" value="3" /><span>3주택</span></label>
+              <label><input type="radio" name="ac-houses" value="4" /><span>4주택+</span></label>
+            </div>
+            <span class="hint">분양권·입주권·주거용 오피스텔도 주택 수에 포함됩니다.</span>
+          </fieldset>
+
+          <label class="switch" style="margin-bottom:12px">
+            <input type="checkbox" id="ac-adjusted" />
+            <span>조정대상지역 주택 (서울 25개 구, 경기 15곳)</span>
+          </label>
+
+          <label class="switch" style="margin-bottom:12px">
+            <input type="checkbox" id="ac-over85" />
+            <span>전용면적 85㎡ 초과 (농어촌특별세 부과)</span>
+          </label>
+
+          <fieldset class="fieldset">
+            <legend>생애최초 감면</legend>
+            <div class="segmented" style="grid-auto-flow:row;grid-template-columns:1fr;">
+              <label><input type="radio" name="ac-first" value="none" checked /><span>적용 안 함</span></label>
+              <label><input type="radio" name="ac-first" value="general" /><span>일반 주택 — 최대 200만 원</span></label>
+              <label><input type="radio" name="ac-first" value="small" /><span>소형·인구감소지역 — 최대 300만 원</span></label>
+            </div>
+            <span class="hint">본인·배우자 모두 주택 소유 이력이 없고 12억 원 이하 주택을 유상 취득한 경우</span>
+          </fieldset>
+        </form>
+
+        <div>
+          <div class="result-hero">
+            <div class="label">총 납부 세액</div>
+            <div class="value" id="ac-total">0원</div>
+            <div class="sub"><span id="ac-total-ko">-</span> · <span id="ac-effective">-</span></div>
+            <div class="hero-foot">
+              <span class="badge badge-ok" id="ac-rate">1%</span>
+              <span id="ac-basis">1주택 → 일반세율 1.00%</span>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:16px">
+            <h3 style="font-size:1rem;margin-bottom:10px">세목별 내역</h3>
+            <div class="table-wrap">
+              <table class="data">
+                <thead>
+                  <tr><th scope="col">세목</th><th scope="col">세율</th><th scope="col" class="num">세액</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td class="row-label">취득세</td><td class="muted" id="ac-tax-rate">1.00%</td><td class="num" id="ac-line-tax">0원</td></tr>
+                  <tr><td class="row-label">생애최초 감면</td><td class="muted">-</td><td class="num" id="ac-line-relief">0원</td></tr>
+                  <tr><td class="row-label">지방교육세</td><td class="muted" id="ac-edu-rate">0.10%</td><td class="num" id="ac-line-edu">0원</td></tr>
+                  <tr><td class="row-label">농어촌특별세</td><td class="muted" id="ac-farm-rate">해당 없음</td><td class="num" id="ac-line-farm">0원</td></tr>
+                  <tr class="is-total"><td>합계</td><td class="muted">-</td><td class="num" id="ac-line-total">0원</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="hint" id="ac-farm-desc">전용면적 85㎡ 이하 → 농어촌특별세 면제</p>
+            <div class="note small" id="ac-relief-line"><span class="muted">생애최초 감면을 적용하지 않았습니다.</span></div>
+            <p class="hint" id="ac-tax-note"></p>
+            <p class="hint warn-text" id="ac-edge" hidden></p>
+            <div class="note small">
+              <strong>신고기한은 취득일부터 60일</strong>입니다. 기한을 넘기면 무신고 가산세 20%와 납부지연 가산세가 붙습니다.
+            </div>
+            <div class="result-actions">
+              <button type="button" class="btn" data-copy="ac">결과 복사</button>
+              <a class="btn" href="#ac-detail">세율표 보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 광고: 본문 중간 (ad-slot-infeed) -->
+    <aside class="ad-slot" id="ad-slot-infeed" aria-label="광고">
+      <div class="ad-inner">
+        <div>
+          <b>광고 영역 · ad-slot-infeed</b>
+          <span>본문 인피드 광고(Taboola·MGID·AdSense 인아티클)를 이 자리에 넣습니다.</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ================= 본문 콘텐츠 ================= -->
+    <div class="content" id="guide">
+
+      <section id="guide-start">
+        <h2>2026년에 달라진 것부터 확인하세요</h2>
+        <p class="lead">
+          같은 5억 원짜리 집이라도 언제, 어디서, 몇 번째 집으로 사느냐에 따라 세금이 두 배 이상 차이 납니다.
+          아래 세 가지는 2026년 계산에서 가장 자주 발목을 잡는 지점입니다.
+        </p>
+
+        <div class="callout">
+          <h4>① 규제지역이 다시 넓어졌습니다</h4>
+          <p>
+            2025년 10월 16일부터 <strong>서울 25개 구 전역</strong>과 경기 15곳(과천·광명·성남 분당·수정·중원, 수원 영통·장안·팔달,
+            안양 동안, 용인 수지·기흥, 의왕, 하남, 화성 동탄, 구리)이 조정대상지역·투기과열지구로 지정됐습니다.
+            2026년 7월 1일 화성 동탄구·용인 기흥구·구리시가 추가되면서 경기는 15곳이 됐습니다.
+            조정대상지역 여부는 취득세 중과(8%·12%), LTV 40%, 스트레스 금리 3.0%p에 모두 영향을 줍니다.
+          </p>
+        </div>
+
+        <div class="callout warn">
+          <h4>② 스트레스 금리가 1.5%에서 3.0%로 올랐습니다</h4>
+          <p>
+            수도권·규제지역 주택담보대출은 2025년 10월 16일부터 실제 금리에 <strong>3.0%p</strong>를 더한 금리로 DSR을 계산합니다.
+            연소득 5,000만 원, 금리 4%, 30년 원리금균등 조건에서 대출한도가 2억 9,400만 원에서 2억 5,100만 원으로 약 4,300만 원 줄었습니다.
+            지방 비규제지역은 2026년 12월 31일까지 0.75%p가 적용됩니다.
+          </p>
+        </div>
+
+        <div class="callout">
+          <h4>③ 다주택 취득세 중과는 여전히 그대로입니다</h4>
+          <p>
+            "2주택까지 중과를 없앤다"는 2022년 발표는 <strong>법률 개정으로 이어지지 않았습니다</strong>.
+            조정대상지역 2주택 8%, 3주택 이상 12%가 지금도 적용됩니다. 2026년 2월 발의된 취득세율 구간 상향안(1% 구간을 9억 원까지)은
+            국회 상임위 심사 단계에 있어, 계약 시점의 시행 여부를 확인하셔야 합니다.
+          </p>
+        </div>
+      </section>
+
+      <!-- ---------------- 청약 ---------------- -->
+      <section id="cy-detail">
+        <h2>청약가점: 계산보다 어려운 '세는 법'</h2>
+        <p>
+          청약가점 84점은 세 항목의 합입니다. 배점표 자체는 단순하지만, 실제 청약에서 점수가 어긋나는 이유는 대부분
+          <em>무엇을 언제부터 세는지</em>를 잘못 알았기 때문입니다.
+        </p>
+
+        <h3>① 무주택기간 — 만 30세가 기준입니다</h3>
+        <p>
+          살면서 집이 없었던 기간 전체가 아닙니다. <strong>신청자가 만 30세가 되는 날</strong>부터 계속 무주택이었던 기간으로 계산합니다.
+          만 30세 이전에 혼인신고를 했다면 혼인신고일이 기산일이 됩니다. 그래서 만 30세 미만이면서 미혼인 무주택자는 이 항목이 0점입니다.
+        </p>
+        <p>
+          중간에 본인이나 배우자가 주택을 소유한 적이 있으면, 그 주택을 처분해 무주택자가 된 날부터 다시 셉니다.
+          두 번 이상 소유한 적이 있으면 <strong>가장 최근에 무주택이 된 날</strong>이 기준입니다.
+          청약통장 가입자는 물론 배우자의 주택 소유 이력도 함께 봅니다.
+        </p>
+        <div class="table-scroll">
+          <table class="compare">
+            <caption class="sr-only">무주택기간 배점표</caption>
+            <thead>
+              <tr><th scope="col">기간</th><th scope="col">점수</th><th scope="col">기간</th><th scope="col">점수</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">1년 미만</th><td>2점</td><th scope="row">8년 이상~9년 미만</th><td>18점</td></tr>
+              <tr><th scope="row">1년 이상~2년 미만</th><td>4점</td><th scope="row">10년 이상~11년 미만</th><td>22점</td></tr>
+              <tr><th scope="row">2년 이상~3년 미만</th><td>6점</td><th scope="row">12년 이상~13년 미만</th><td>26점</td></tr>
+              <tr><th scope="row">3년 이상~4년 미만</th><td>8점</td><th scope="row">14년 이상~15년 미만</th><td>30점</td></tr>
+              <tr><th scope="row">5년 이상~6년 미만</th><td>12점</td><th scope="row">15년 이상</th><td>32점 (만점)</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>② 부양가족 — 35점이 걸린 가장 큰 항목</h3>
+        <p>
+          본인은 세지 않습니다. 0명이어도 5점이 주어지고, 1명마다 5점씩 올라 6명 이상이면 35점 만점입니다.
+          등본에 이름이 있다고 모두 인정되는 것은 아니고, 대상별로 요건이 다릅니다.
+        </p>
+        <div class="table-scroll">
+          <table class="compare">
+            <thead>
+              <tr><th scope="col">대상</th><th scope="col">인정 조건</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">배우자</th><td>주민등록이 분리돼 있어도 포함</td></tr>
+              <tr><th scope="row">본인 직계존속<br />(부모·조부모)</th><td>본인이 세대주이고, 공고일 기준 3년 이상 계속 같은 주민등록표에 등재</td></tr>
+              <tr><th scope="row">배우자 직계존속</th><td>배우자와 같은 등본에 3년 이상 계속 등재</td></tr>
+              <tr><th scope="row">미혼 직계비속<br />(자녀)</th><td>같은 등본에 등재. 만 30세 이상 자녀는 최근 1년 이상 계속 등재해야 인정</td></tr>
+              <tr><th scope="row">손자녀</th><td>원칙적으로 제외. 부모가 모두 사망한 미혼 손자녀만 인정</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          주택을 소유한 직계존속은 부양가족으로 세지 않습니다. 다만 만 60세 이상 직계존속이 주택을 소유해도
+          본인의 무주택 자격이 깨지지는 않습니다. (소형·저가주택 특례는 별도 요건이 있습니다.)
+        </p>
+
+        <h3>③ 청약통장 가입기간 — 1년에 1점, 17점이 상한</h3>
+        <p>
+          최초 가입일(순위기산일)부터 계산합니다. 통장 종류를 바꾸거나 예치금을 조정해도 최초 가입일은 유지되므로,
+          오래된 통장을 해지하지 않는 편이 유리합니다. 6개월 미만 1점에서 시작해 15년 이상이면 17점입니다.
+        </p>
+        <ul>
+          <li><strong>미성년자 기간</strong>은 최대 5년까지만 인정됩니다. 2024년 7월 1일 시행 기준이며, 2023년 12월 31일 이전 기간은 그중 2년만 인정됩니다.</li>
+          <li><strong>배우자 통장</strong>은 가입기간의 50%로 산정한 점수를 최대 3점까지 더할 수 있습니다. 합산 상한은 17점입니다.</li>
+          <li>본인 통장이 이미 15년 이상(17점)이면 배우자 점수를 더해도 총점은 변하지 않습니다.</li>
+          <li>배우자 합산은 특별공급에는 적용되지 않습니다.</li>
+        </ul>
+
+        <h3>가점제와 추첨제는 물량이 따로 있습니다</h3>
+        <p>
+          같은 단지에서도 가점 순으로 뽑는 물량과 추첨으로 뽑는 물량이 나뉩니다. 가점이 낮아도 추첨제에서 기회가 있고,
+          가점제에서 떨어지면 별도 신청 없이 추첨 대상에 포함됩니다.
+        </p>
+        <div class="table-scroll">
+          <table class="compare">
+            <thead>
+              <tr><th scope="col">전용면적</th><th scope="col">투기과열지구·청약과열지역</th><th scope="col">그 밖의 지역</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">60㎡ 이하</th><td>가점 40% · 추첨 60%</td><td>가점 40% 이하 (지자체 공고)</td></tr>
+              <tr><th scope="row">60㎡ 초과~85㎡ 이하</th><td>가점 70% · 추첨 30%</td><td>가점 40% 이하 (지자체 공고)</td></tr>
+              <tr><th scope="row">85㎡ 초과</th><td>투기과열 80% · 청약과열 50% 가점</td><td>추첨 100%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small muted">
+          출처: 「주택공급에 관한 규칙」 제28조(2026. 6. 15. 시행), 별표 1 가점제 적용기준.
+          추첨제는 무주택세대구성원에게 물량의 75%를 먼저 공급합니다.
+        </p>
+      </section>
+
+      <!-- ---------------- DSR ---------------- -->
+      <section id="dsr-detail">
+        <h2>DSR: 한도는 '세 개의 자' 중 가장 작은 값</h2>
+        <p>
+          "DSR 40%"는 연소득의 40%까지 빌릴 수 있다는 뜻이 아닙니다. 모든 대출의 <strong>1년 원리금 상환액</strong>이
+          연소득의 40%를 넘지 않는다는 뜻입니다. 실제 한도는 세 가지 기준을 모두 통과한 가장 작은 값으로 정해집니다.
+        </p>
+        <ol>
+          <li><strong>LTV(담보인정비율)</strong> — 수도권·규제지역은 무주택자 기준 40%. 집값의 40%까지만 담보로 인정합니다.</li>
+          <li><strong>시가별 금액한도</strong> — 수도권·규제지역 구입목적 주담대는 시가 15억 원 이하 6억 원, 15억 초과~25억 원 이하 4억 원, 25억 원 초과 2억 원입니다.</li>
+          <li><strong>DSR</strong> — 연소득 × 40%에서 기존 대출 원리금을 뺀 금액으로 역산한 한도.</li>
+        </ol>
+        <p>
+          2026년 수도권에서는 대개 1번(LTV 40%)과 2번(6억·4억·2억)이 먼저 걸립니다. 소득이 아무리 높아도
+          15억 원 이하 주택에서 6억 원을 넘는 주담대는 나오지 않습니다.
+        </p>
+
+        <h3>스트레스 금리 적용표 (2026년 하반기)</h3>
+        <div class="table-scroll">
+          <table class="compare">
+            <thead>
+              <tr><th scope="col">구분</th><th scope="col">수도권·규제지역</th><th scope="col">지방 비규제</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">변동형</th><td class="strong">3.0%p (100%)</td><td>0.75%p</td></tr>
+              <tr><th scope="row">혼합형 5년 미만 고정</th><td>3.0%p (100%)</td><td>0.75%p</td></tr>
+              <tr><th scope="row">혼합형 5~9년 고정</th><td>2.4%p (80%)</td><td>0.6%p</td></tr>
+              <tr><th scope="row">혼합형 9~15년 고정</th><td>1.8%p (60%)</td><td>0.45%p</td></tr>
+              <tr><th scope="row">주기형 5년</th><td>1.2%p (40%)</td><td>0.3%p</td></tr>
+              <tr><th scope="row">전액 고정금리</th><td>미적용</td><td>미적용</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small muted">
+          2025. 10. 15. 대책으로 수도권·규제지역 스트레스 금리 하한이 3.0%로 상향됐고, 지방 주담대는 2단계(0.75%p)가
+          2026년 12월 31일까지 유지됩니다. 고정금리 비중이 큰 상품일수록 가산 비율이 낮아 한도에 유리합니다.
+        </p>
+
+        <h3>신용대출 5천만 원이 주담대 한도를 1억 원 이상 깎는 이유</h3>
+        <p>
+          DSR을 계산할 때 신용대출은 실제 만기와 상관없이 <strong>5년 만기 원리금균등</strong>으로 환산합니다.
+          금리 6% 기준 5,000만 원이면 연 원리금이 약 1,160만 원으로 잡히고, 이 금액만큼 주담대 여력이 줄어듭니다.
+          연소득 6,000만 원(DSR 40% = 2,400만 원) 기준으로 주담대 여력이 2,400만 원에서 1,240만 원으로 떨어지는 셈입니다.
+        </p>
+        <ul>
+          <li>신용대출 잔액이 1억 원을 넘으면 스트레스 금리도 함께 적용됩니다.</li>
+          <li>무주택자의 전세대출은 DSR에서 빠지지만, 1주택자가 수도권·규제지역에서 받는 전세대출은 2025년 10월 29일부터 이자 상환분이 DSR에 반영됩니다.</li>
+          <li>학자금·중도금·이주비 대출은 DSR 산정에서 제외됩니다.</li>
+        </ul>
+
+        <h3>원리금균등 vs 원금균등, 한도는 어느 쪽이 유리할까</h3>
+        <p>
+          원금균등은 초기에 원금을 많이 갚기 때문에 1년차 원리금이 원리금균등보다 큽니다. 그만큼 DSR 한도는 작게 나옵니다.
+          대신 총 이자는 적습니다. 이 계산기는 원금균등을 선택하면 <strong>1년차 원리금</strong>을 기준으로 한도를 계산합니다.
+          금융회사에 따라 평균 잔액 기준으로 심사하는 경우도 있으므로, 실제 한도는 은행 상담에서 확인하세요.
+        </p>
+      </section>
+
+      <!-- ---------------- 취득세 ---------------- -->
+      <section id="ac-detail">
+        <h2>취득세: 6억과 9억 사이의 누진 구간을 조심하세요</h2>
+        <p>
+          1주택(또는 조정대상지역 외 2주택) 기준 취득세율은 6억 원 이하 1%, 6억 원 초과 9억 원 이하 누진 1~3%,
+          9억 원 초과 3%입니다. 누진 구간의 세율은 <strong>(취득가액 × 2 ÷ 3억 − 3)%</strong>로 계산합니다.
+          6억 원에서 1%, 9억 원에서 3%가 되는 직선 구간입니다.
+        </p>
+        <div class="table-scroll">
+          <table class="compare">
+            <thead>
+              <tr><th scope="col">구분</th><th scope="col">취득세</th><th scope="col">지방교육세</th><th scope="col">농특세<br />(85㎡ 초과)</th><th scope="col">합계</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">1주택 · 6억 이하</th><td>1%</td><td>0.1%</td><td>0.2%</td><td class="strong">1.1% (1.3%)</td></tr>
+              <tr><th scope="row">1주택 · 6억 초과~9억 이하</th><td>1~3%</td><td>0.1~0.3%</td><td>0.2%</td><td class="strong">1.1~3.3% (1.3~3.5%)</td></tr>
+              <tr><th scope="row">1주택 · 9억 초과</th><td>3%</td><td>0.3%</td><td>0.2%</td><td class="strong">3.3% (3.5%)</td></tr>
+              <tr><th scope="row">조정대상지역 2주택</th><td>8%</td><td>0.4%</td><td>0.6%</td><td class="strong">8.4% (9.0%)</td></tr>
+              <tr><th scope="row">조정대상지역 3주택 이상</th><td>12%</td><td>0.4%</td><td>1.0%</td><td class="strong">12.4% (13.4%)</td></tr>
+              <tr><th scope="row">조정 외 3주택</th><td>8%</td><td>0.4%</td><td>0.6%</td><td class="strong">8.4% (9.0%)</td></tr>
+              <tr><th scope="row">조정 외 4주택 이상</th><td>12%</td><td>0.4%</td><td>1.0%</td><td class="strong">12.4% (13.4%)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small muted">
+          괄호는 전용 85㎡ 초과(농어촌특별세 포함) 합계입니다. 중과세율(8%·12%)이 적용되면 지방교육세는
+          취득세액의 10%가 아니라 0.4% 정률로 부과됩니다.
+        </p>
+
+        <h3>생애최초 감면, 200만 원인지 300만 원인지</h3>
+        <p>
+          본인과 배우자가 주택을 소유한 사실이 없고, 12억 원 이하 주택을 유상 취득하면 취득세를 감면받습니다.
+          2025년 말 일몰이 <strong>2028년 12월 31일까지 연장</strong>됐습니다.
+        </p>
+        <ul>
+          <li><strong>최대 300만 원</strong> — 전용 60㎡ 이하이면서 취득가액 3억 원(수도권 6억 원) 이하인 공동주택(아파트 제외)·도시형 생활주택·다가구주택, 또는 인구감소지역 소재 주택</li>
+          <li><strong>최대 200만 원</strong> — 그 밖의 12억 원 이하 주택</li>
+        </ul>
+        <p>
+          감면은 <strong>취득세에만</strong> 적용됩니다. 지방교육세와 농어촌특별세는 감면 대상이 아니어서
+          감면 전 취득세액을 기준으로 계산되는 경우가 많습니다. 취득세가 전액 면제되어도 지방교육세를 내는 사례가 그래서 나옵니다.
+          계산기 결과에서 두 세목이 함께 표시되는 이유입니다.
+        </p>
+
+        <h3>놓치기 쉬운 취득세 포인트</h3>
+        <ul>
+          <li><strong>일시적 2주택</strong> — 이사·상속 등으로 일시적 2주택이 되고 3년 이내 종전 주택을 처분하면 1주택으로 보아 1~3%가 적용됩니다. 요건은 취득 시점과 주택 수에 따라 다릅니다.</li>
+          <li><strong>지방 저가주택</strong> — 비수도권 소재 공시가격 2억 원 이하 주택은 2025년 1월 2일 이후 취득분부터 중과 대상에서 빠집니다.</li>
+          <li><strong>인구감소지역 25% 경감</strong> — 무주택자 또는 1주택자가 인구감소지역(2026년부터 인구감소관심지역 포함) 주택을 취득하면 최대 75만 원까지 경감됩니다. 생애최초 감면과 중복 적용 여부는 지자체에 확인하세요.</li>
+          <li><strong>과세표준</strong> — 실거래가와 주택공시가격 중 높은 금액입니다. 분양권은 분양가에 프리미엄·옵션을 더한 금액이 기준이 됩니다.</li>
+          <li><strong>2026년 개편안</strong> — 정부는 40세 미만 청년의 생애최초 감면 한도를 300만 원으로 올리고, 주거용 오피스텔까지 감면 대상을 넓히는 개정안을 마련해 국회 제출을 추진하고 있습니다. 시행 여부와 시기를 계약 전에 확인하세요.</li>
+        </ul>
+      </section>
+
+      <!-- ---------------- 체크리스트 ---------------- -->
+      <section id="checklist">
+        <h2>계약 전 체크리스트</h2>
+        <p>세 계산은 서류와 등기부, 공고문을 확인한 뒤에야 확정됩니다. 아래 항목은 계약금을 넣기 전에 확인하세요.</p>
+        <ul class="checklist">
+          <li>취득할 주택이 <strong>조정대상지역</strong>인지 국토교통부 공고로 확인했다.</li>
+          <li>1세대 주택 수에 <strong>분양권·입주권·주거용 오피스텔</strong>까지 포함해 계산했다.</li>
+          <li>취득가액을 <strong>실거래가와 공시가격 중 높은 금액</strong>으로 잡았다.</li>
+          <li>전용면적이 <strong>85㎡를 넘는지</strong> 확인해 농어촌특별세를 반영했다.</li>
+          <li>생애최초 감면 요건(본인·배우자 소유 이력 없음, 12억 원 이하)을 확인했다.</li>
+          <li>생애최초 감면 시 <strong>3년 내 전입·거주</strong> 등 추징 요건을 확인했다.</li>
+          <li>취득일부터 <strong>60일 이내 신고·납부</strong> 일정을 잡았다.</li>
+          <li>DSR 계산에 <strong>기존 신용대출·자동차할부</strong>를 모두 넣었다.</li>
+          <li>스트레스 금리가 <strong>수도권 3.0%p / 지방 0.75%p</strong> 중 어느 쪽인지 확인했다.</li>
+          <li>LTV 40%(규제지역)와 <strong>시가별 금액한도(6억·4억·2억)</strong>를 함께 계산했다.</li>
+          <li>다주택자라면 규제지역 주담대가 <strong>원칙적으로 불가</strong>하다는 점을 확인했다.</li>
+          <li>청약 시 <strong>입주자모집공고일</strong> 기준으로 가점을 다시 계산했다.</li>
+        </ul>
+      </section>
+
+      <!-- ---------------- FAQ ---------------- -->
+      <section id="faq">
+        <h2>자주 묻는 질문</h2>
+        <div class="faq-list">
+
+          <details class="faq-item" open>
+            <summary>청약가점은 몇 점이 만점인가요?</summary>
+            <div class="faq-body">
+              <p>84점 만점입니다. 무주택기간 32점, 부양가족 수 35점, 청약통장 가입기간 17점을 더한 값이며 배점은 「주택공급에 관한 규칙」 별표 1에 정해져 있습니다. 세 항목 모두 상한이 있어 하나라도 부족하면 84점이 되지 않습니다.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>무주택기간은 언제부터 세나요?</summary>
+            <div class="faq-body">
+              <p>원칙적으로 만 30세가 되는 날부터입니다. 만 30세 이전에 혼인신고를 했다면 혼인신고일부터 기산합니다. 중간에 본인이나 배우자가 주택을 소유한 적이 있으면 그 주택을 처분해 무주택자가 된 날부터 다시 셉니다. 만 30세 미만이면서 미혼이면 이 항목은 0점입니다.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>배우자 청약통장 가입기간도 점수에 들어가나요?</summary>
+            <div class="faq-body">
+              <p>들어갑니다. 배우자 가입기간의 50%에 해당하는 기간으로 산정한 점수를 최대 3점까지 더할 수 있고, 합산한 통장 점수는 17점을 넘지 않습니다. 특별공급에는 적용되지 않습니다.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>DSR 40%면 연소득의 40%까지 빌릴 수 있다는 뜻인가요?</summary>
+            <div class="faq-body">
+              <p>아닙니다. DSR은 모든 대출의 1년 원리금 상환액이 연소득에서 차지하는 비율입니다. 연소득의 40%까지 원리금으로 갚을 수 있다는 뜻이고, 대출금액이 소득의 40%라는 뜻은 아닙니다. 실제 한도는 LTV, 시가별 금액한도, DSR 중 가장 작은 값입니다.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>스트레스 DSR은 실제로 금리를 더 내는 건가요?</summary>
+            <div class="faq-body">
+              <p>아닙니다. 스트레스 금리는 한도를 계산할 때만 쓰는 가상의 가산금리입니다. 2026년 하반기 기준 수도권·규제지역 주담대는 3.0%p, 지방 비규제지역은 0.75%p를 더한 금리로 DSR을 산정합니다. 실제로 내는 이자는 계약금리 그대로입니다.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>취득세율은 1%인가요, 3%인가요?</summary>
+            <div class="faq-body">
+              <p>1주택(또는 조정대상지역 외 2주택) 기준으로 취득가액 6억 원 이하 1%, 6억 초과 9억 이하 누진 1~3%, 9억 초과 3%입니다. 여기에 지방교육세와 전용 85㎡ 초과 시 농어촌특별세가 더해집니다. 조정대상지역 2주택은 8%, 3주택 이상은 12% 중과입니다.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>생애최초 취득세 감면은 얼마까지 되나요?</summary>
+            <div class="faq-body">
+              <p>본인과 배우자가 주택을 소유한 적이 없고 12억 원 이하 주택을 유상 취득하면 최대 200만 원까지 감면됩니다. 전용 60㎡ 이하이면서 취득가액 3억 원(수도권 6억 원) 이하인 공동주택·도시형 생활주택·다가구주택이나 인구감소지역 주택은 최대 300만 원입니다. 감면 기한은 2028년 12월 31일까지입니다.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>지방교육세와 농어촌특별세도 감면되나요?</summary>
+            <div class="faq-body">
+              <p>생애최초 감면은 취득세에만 적용됩니다. 지방교육세와 농어촌특별세는 감면 대상이 아니어서 감면 전 취득세액을 기준으로 계산됩니다. 취득세가 전액 면제되어도 지방교육세는 내야 하는 경우가 있습니다.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>취득세는 언제까지 내야 하나요?</summary>
+            <div class="faq-body">
+              <p>유상거래로 주택을 취득하면 취득일부터 60일 이내에 신고·납부해야 합니다. 기한을 넘기면 무신고 가산세(세액의 20%)와 납부지연 가산세가 붙습니다. 납부할 세액이 250만 원을 넘으면 2개월 이내 분납을 신청할 수 있는 경우가 있으니 관할 지자체에 확인하세요.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>일시적으로 2주택이 되면 중과세율이 적용되나요?</summary>
+            <div class="faq-body">
+              <p>이사·상속 등으로 일시적 2주택이 된 경우, 일정 요건을 갖추고 3년 이내에 종전 주택을 처분하면 1주택으로 보아 1~3% 일반세율이 적용됩니다. 요건과 기산일은 취득 시점과 주택 수에 따라 달라지므로 계약 전 관할 지자체에 확인하는 것이 안전합니다.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>이 계산기 결과를 그대로 신고에 써도 되나요?</summary>
+            <div class="faq-body">
+              <p>아니 됩니다. 이 계산기는 계획을 세우기 위한 참고 도구입니다. 취득세는 지분 취득, 감면 요건, 지자체 조례에 따라 달라지고, 대출한도는 금융회사의 소득 인정 방식과 신용도에 따라 달라집니다. 실제 신고·심사 전에는 위택스·청약홈·은행 상담으로 확인하세요.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="updated-box">
+          <span><strong>기준일</strong> 2026. 11. 14.</span>
+          <span><strong>반영</strong> 주택공급에 관한 규칙(2026. 6. 15. 시행) · 지방세법 §11·§13조의2 · 지방세특례제한법 §36조의3 · 스트레스 DSR 2026년 하반기 운영방안</span>
+        </div>
+      </section>
+
+      <section id="disclaimer">
+        <h2>계산 기준과 한계</h2>
+        <p>
+          이 사이트의 계산은 공개된 법령과 금융당국 발표를 바탕으로 한 <strong>참고용 추정</strong>입니다.
+          실제 세액과 대출한도는 개별 사실관계, 지방자치단체의 판단, 금융회사의 심사 기준에 따라 달라질 수 있습니다.
+          계산 결과로 인한 의사결정은 이용자 본인의 판단과 책임이며, 이 사이트는 결과의 정확성을 보증하지 않습니다.
+        </p>
+        <ul class="source-list">
+          <li>「주택공급에 관한 규칙」 별표 1(가점제 적용기준), 제28조(민영주택 일반공급) — 국가법령정보센터</li>
+          <li>「지방세법」 제11조(부동산 취득의 세율), 제13조의2(법인의 주택 취득 등 중과), 제151조(지방교육세)</li>
+          <li>「농어촌특별세법」 제5조(세율) — 85㎡ 초과 주택 0.2%·0.6%·1.0%</li>
+          <li>「지방세특례제한법」 제36조의3(생애최초 주택 구입에 대한 취득세 감면) — 2028. 12. 31.까지</li>
+          <li>국토교통부 공고 제2025-1223호·제2026-882호 — 조정대상지역·투기과열지구 지정 현황</li>
+          <li>금융위원회, 「3단계 스트레스 DSR 시행방안」 및 2025. 10. 15. 「주택시장 안정화를 위한 대출수요 관리 방안」</li>
+          <li>전국은행연합회, 「2026년 하반기 스트레스 DSR 운영방안」(2026. 6. 30.)</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- 광고: 하단 (ad-slot-bottom) -->
+    <aside class="ad-slot" id="ad-slot-bottom" aria-label="광고">
+      <div class="ad-inner">
+        <div>
+          <b>광고 영역 · ad-slot-bottom</b>
+          <span>본문 하단 반응형 광고 지면입니다.</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">집</span>
+          <span>부동산 계산소<small>청약가점 · DSR · 취득세</small></span>
+        </a>
+        <p class="footer-note">
+          2026년 기준 법령과 금융당국 발표를 반영한 무료 계산기입니다.
+          입력한 값은 브라우저 안에서만 계산되며 서버로 전송되거나 저장되지 않습니다.
+        </p>
+      </div>
+      <div>
+        <h3>계산기</h3>
+        <ul class="footer-links">
+          <li><a href="#cheongyak" data-tab="cheongyak">청약가점 계산기</a></li>
+          <li><a href="#dsr" data-tab="dsr">주담대 DSR 계산기</a></li>
+          <li><a href="#acq" data-tab="acq">취득세 계산기</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>안내</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">서비스 소개·면책</a></li>
+          <li><a href="privacy.html">개인정보처리방침</a></li>
+          <li><a href="about.html#contact">문의</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 2026 부동산 계산소. All rights reserved.</span>
+      <span>본 사이트의 계산 결과는 참고용이며 법적 효력이 없습니다.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
