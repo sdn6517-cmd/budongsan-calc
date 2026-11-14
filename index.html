@@ -28,10 +28,10 @@
 
 <!-- Pretendard (CDN) -->
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-<link rel="stylesheet" as="style" crossorigin
+<link rel="stylesheet" crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 <link rel="stylesheet" href="styles.css" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f5f5c'/%3E%3Cpath d='M8 16.5 16 9l8 7.5V24a1 1 0 0 1-1 1h-4v-6h-6v6H9a1 1 0 0 1-1-1z' fill='%23fff'/%3E%3C/svg%3E" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%230f5f5c'/%3E%3Cpath%20d='M8%2016.5%2016%209l8%207.5V24a1%201%200%200%201-1%201h-4v-6h-6v6H9a1%201%200%200%201-1-1z'%20fill='%23fff'/%3E%3C/svg%3E" />
 
 <script type="application/ld+json">
 {
@@ -240,7 +240,7 @@
               </div>
             </div>
             <span class="hint">만 30세가 된 날(그 전에 혼인했다면 혼인신고일)부터 무주택이었던 기간</span>
-            <div class="chips" aria-label="무주택기간 빠른 선택">
+            <div class="chips" role="group" aria-label="무주택기간 빠른 선택">
               <button type="button" class="chip" data-set='{"ownYears":0,"ownMonths":0}'>1년 미만</button>
               <button type="button" class="chip" data-set='{"ownYears":3,"ownMonths":0}'>3년</button>
               <button type="button" class="chip" data-set='{"ownYears":7,"ownMonths":0}'>7년</button>
@@ -285,7 +285,7 @@
               <span class="unit">명</span>
             </div>
             <span class="hint">배우자, 3년 이상 함께 사는 직계존속, 미혼 직계비속. 6명 이상은 35점 만점</span>
-            <div class="chips" aria-label="부양가족 수 빠른 선택">
+            <div class="chips" role="group" aria-label="부양가족 수 빠른 선택">
               <button type="button" class="chip" data-set='{"dependents":0}'>0명</button>
               <button type="button" class="chip" data-set='{"dependents":1}'>1명</button>
               <button type="button" class="chip" data-set='{"dependents":2}'>2명</button>
@@ -307,7 +307,7 @@
               </div>
             </div>
             <span class="hint">최초 가입일 기준. 6개월 미만 1점 ~ 15년 이상 17점</span>
-            <div class="chips" aria-label="가입기간 빠른 선택">
+            <div class="chips" role="group" aria-label="가입기간 빠른 선택">
               <button type="button" class="chip" data-set='{"accYears":0,"accMonths":3}'>6개월 미만</button>
               <button type="button" class="chip" data-set='{"accYears":2,"accMonths":0}'>2년</button>
               <button type="button" class="chip" data-set='{"accYears":5,"accMonths":0}'>5년</button>
@@ -411,7 +411,7 @@
               <span class="unit">만원</span>
             </div>
             <span class="hint">부부 합산 소득도 가능합니다. 예: 6,000 = 6,000만 원</span>
-            <div class="chips" aria-label="연소득 빠른 선택">
+            <div class="chips" role="group" aria-label="연소득 빠른 선택">
               <button type="button" class="chip" data-set='{"income":3000}'>3,000만</button>
               <button type="button" class="chip" data-set='{"income":5000}'>5,000만</button>
               <button type="button" class="chip" data-set='{"income":6000}'>6,000만</button>
@@ -434,7 +434,7 @@
               <input type="number" id="dsr-years" min="1" max="50" step="1" value="30" inputmode="numeric" />
               <span class="unit">년</span>
             </div>
-            <div class="chips" aria-label="대출기간 빠른 선택">
+            <div class="chips" role="group" aria-label="대출기간 빠른 선택">
               <button type="button" class="chip" data-set='{"years":10}'>10년</button>
               <button type="button" class="chip" data-set='{"years":20}'>20년</button>
               <button type="button" class="chip" data-set='{"years":30}'>30년</button>
@@ -462,7 +462,7 @@
               <option value="0">0%p — 전액 고정금리·미적용</option>
             </select>
             <span class="hint">실제로 내는 금리가 아니라 <strong>한도 계산에만</strong> 쓰이는 가상 금리입니다.</span>
-            <div class="chips" aria-label="스트레스 금리 빠른 선택">
+            <div class="chips" role="group" aria-label="스트레스 금리 빠른 선택">
               <button type="button" class="chip" data-set='{"stress":3}'>수도권 3.0%p</button>
               <button type="button" class="chip" data-set='{"stress":0.75}'>지방 0.75%p</button>
               <button type="button" class="chip" data-set='{"stress":0}'>고정금리 0%p</button>
@@ -600,7 +600,7 @@
               <span class="unit">만원</span>
             </div>
             <span class="hint">실거래가와 주택공시가격 중 높은 금액. 예: 6억 = 60,000</span>
-            <div class="chips" aria-label="취득가액 빠른 선택">
+            <div class="chips" role="group" aria-label="취득가액 빠른 선택">
               <button type="button" class="chip" data-set='{"price":30000}'>3억</button>
               <button type="button" class="chip" data-set='{"price":60000}'>6억</button>
               <button type="button" class="chip" data-set='{"price":75000}'>7억 5천</button>
@@ -705,7 +705,7 @@
         </p>
 
         <div class="callout">
-          <h4>① 규제지역이 다시 넓어졌습니다</h4>
+          <h3>① 규제지역이 다시 넓어졌습니다</h3>
           <p>
             2025년 10월 16일부터 <strong>서울 25개 구 전역</strong>과 경기 15곳(과천·광명·성남 분당·수정·중원, 수원 영통·장안·팔달,
             안양 동안, 용인 수지·기흥, 의왕, 하남, 화성 동탄, 구리)이 조정대상지역·투기과열지구로 지정됐습니다.
@@ -715,7 +715,7 @@
         </div>
 
         <div class="callout warn">
-          <h4>② 스트레스 금리가 1.5%에서 3.0%로 올랐습니다</h4>
+          <h3>② 스트레스 금리가 1.5%에서 3.0%로 올랐습니다</h3>
           <p>
             수도권·규제지역 주택담보대출은 2025년 10월 16일부터 실제 금리에 <strong>3.0%p</strong>를 더한 금리로 DSR을 계산합니다.
             연소득 5,000만 원, 금리 4%, 30년 원리금균등 조건에서 대출한도가 2억 9,400만 원에서 2억 5,100만 원으로 약 4,300만 원 줄었습니다.
@@ -724,7 +724,7 @@
         </div>
 
         <div class="callout">
-          <h4>③ 다주택 취득세 중과는 여전히 그대로입니다</h4>
+          <h3>③ 다주택 취득세 중과는 여전히 그대로입니다</h3>
           <p>
             "2주택까지 중과를 없앤다"는 2022년 발표는 <strong>법률 개정으로 이어지지 않았습니다</strong>.
             조정대상지역 2주택 8%, 3주택 이상 12%가 지금도 적용됩니다. 2026년 2월 발의된 취득세율 구간 상향안(1% 구간을 9억 원까지)은

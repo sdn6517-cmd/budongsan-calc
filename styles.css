@@ -876,6 +876,7 @@ table.data .pts {
   color: #7c2d12;
 }
 .callout.warn p { color: #7c2d12; }
+.callout h3 { color: inherit; margin: 0 0 .4rem; font-size: 1rem; }
 .callout h4 { color: inherit; margin-top: 0; }
 
 .table-scroll { overflow-x: auto; margin: 14px 0; }
